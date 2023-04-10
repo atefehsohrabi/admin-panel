@@ -3,6 +3,8 @@ import { Route, Routes } from 'react-router-dom'
 import Footer from './share/Footer'
 import Header from './share/Header'
 import Sidebar from './share/Sidebar'
+import Persons from './person/list'
+import Dashboard from './generaly/dashboard'
 
 import '../assets/css/general.css'
 
@@ -17,7 +19,8 @@ function App() {
           <Sidebar />
           <Content className='content'>
             <Routes>
-              <Route path='/' element={<div>salam</div>} />
+              <Route path='/' element={<Dashboard />} />
+              <Route path='/person' element={<Persons />} />
             </Routes>
           </Content>
         </Layout>
